@@ -1,0 +1,24 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhyeonahnhelloworld/helloworld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhyeonahnhelloworld/helloworld/issues"
+  },
+  "homepage": "https://github.com/suhyeonahnhelloworld/helloworld#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "zombie": "^6.1.4"
+  }
+}

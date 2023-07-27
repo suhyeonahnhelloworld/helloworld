@@ -1,18 +1,27 @@
-#!groovy 
+#!groovy
 
 node {
-   stage 'Checkout'
+    stage('Checkout') {
+        // Checkout the source code from SCM (e.g., Git)
         checkout scm
+    }
 
-   stage 'Setup'
-        sh 'npm config set registry  http://registry.npmjs.org/'
+    stage('Setup') {
+        // Set npm registry and install dependencies
+        sh 'npm config set registry http://registry.npmjs.org/'
         sh 'npm install'
+    }
 
-   stage 'Mocha test'
+    stage('Mocha test') {
+        // Run Mocha tests
         sh './node_modules/mocha/bin/_mocha'
+    }
 
-   stage 'Cleanup'
+    stage('Cleanup') {
+        // Prune npm dependencies and remove node_modules
         echo 'prune and cleanup'
         sh 'npm prune'
-        sh 'rm node_modules -rf'
+        sh 'rm -rf node_modules'
+    }
 }
+

@@ -7,7 +7,7 @@ node {
 
 stage 'Setup'
 	sh 'npm config set registry http://registry.npmjs.org/'
-	sh 'npm install'
+	sh 'npm init -yes'
 
 stage 'Mocha test'
 	sh './node_modules/mocha/bin/_mocha'

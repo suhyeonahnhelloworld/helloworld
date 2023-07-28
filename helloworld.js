@@ -18,4 +18,5 @@ console.log('Server running')
 setTimeout(function () {
   server.close();
   console.log('Server closed');
-}, 60000);
+}, 50000);
+

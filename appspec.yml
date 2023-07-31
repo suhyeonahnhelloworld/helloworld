@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: helloworld.js
-  destination: /usr/local/helloworld/
+    destination: /usr/local/helloworld/
   - source: scripts/helloworld.conf
-  destination: /etc/init
+    destination: /etc/init
 hooks:
   BeforeInstall:
     - location: scripts/stop.sh
@@ -16,3 +16,4 @@ hooks:
   ValidateService:
     - location: scripts/validate.sh
       runas: root
+

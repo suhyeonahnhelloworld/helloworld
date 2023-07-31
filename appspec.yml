@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: helloworld.js
+  destination: /usr/local/helloworld/
+  - source: scripts/helloworld.conf
+  destination: /etc/init
+hooks:
+  BeforeInstall:
+    - location: scripts/stop.sh
+      timeout: 30
+  ApplicationStart:
+    - location: scripts/start.sh
+  ValidateService:
+    - location: scripts/validate.sh

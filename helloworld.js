@@ -15,8 +15,8 @@ const server = http.createServer(function (request, response) {
 console.log('Server running')
 
 // Wait for a minute (60,000 milliseconds) before closing the server
-setTimeout(function () {
-  server.close();
-  console.log('Server closed');
-}, 50000);
+//setTimeout(function () {
+//  server.close();
+//  console.log('Server closed');
+//}, 50000);
 

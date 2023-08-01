@@ -1,2 +1,2 @@
 #!/bin/sh
-start helloworld
+node /usr/local/helloworld/helloworld.js

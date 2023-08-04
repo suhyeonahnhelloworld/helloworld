@@ -23,3 +23,4 @@ hooks:
   AfterInstall:
     - location: scripts/setversion.sh
       timeout: 180
+      runas: root

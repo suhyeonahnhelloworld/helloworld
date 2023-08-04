@@ -19,6 +19,7 @@
   "homepage": "https://github.com/suhyeonahnhelloworld/helloworld#readme",
   "devDependencies": {
     "mocha": "^10.2.0",
+    "winston": "^3.10.0",
     "zombie": "^6.1.4"
   },
   "directories": {
